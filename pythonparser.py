@@ -119,7 +119,8 @@ def init_parser():
 def update_parser():
     """
     Pulls latest entry from SHU RSS feed, parses for pertinent info, connects to google sheets via API, then adds new
-    row. If update fails,
+    row. If update fails, failure is logged, and an email is sent to my personal account telling me update to the
+    google sheet failed.
     :return:
     """
     sheet = client.open("Podcast Info").sheet1
