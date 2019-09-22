@@ -6,6 +6,7 @@ import gspread
 import smtplib
 from oauth2client.service_account import ServiceAccountCredentials
 
+# config file contains info for burner email account, used to warn me in case updating fails
 import config
 
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
